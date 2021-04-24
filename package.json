@@ -4,11 +4,16 @@
   "description": "test do node",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon -r src/index.js --ignore tests",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Juan",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.7",
+    "sequelize": "^6.6.2"
   }
 }
