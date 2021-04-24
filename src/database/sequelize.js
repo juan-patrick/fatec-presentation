@@ -1,18 +1,8 @@
 const { Sequelize } = require('sequelize');
 const Period = require('../models/Period');
+const dbConfig = require('../config/database');
 
-const connection = new Sequelize(
-  {
-    dialect: 'mysql',
-    host: 'localhost',
-    username: 'root',
-    password: '',
-    database: 'fatec_test',
-    define: {
-      timestamps: true,
-    }
-  }
-);
+const connection = new Sequelize(dbConfig);
 
 Period.init(connection);
 

@@ -1,11 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
-
 class Period extends Model {
   static init(sequelize) {
     super.init({
       name: {
-        type: DataTypes.STRING,
+        type: DataTypes.NOW,
         allowNull: false,
+        
       }
     }, { sequelize })
   };
