@@ -3,9 +3,8 @@ class Period extends Model {
   static init(sequelize) {
     super.init({
       name: {
-        type: DataTypes.NOW,
+        type: DataTypes.STRING,
         allowNull: false,
-        
       }
     }, { sequelize })
   };

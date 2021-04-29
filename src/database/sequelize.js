@@ -5,7 +5,6 @@ const dbConfig = require('../config/database');
 const connection = new Sequelize(dbConfig);
 
 Period.init(connection);
-
 connection.sync({ alter: true });
 
 module.exports = connection;

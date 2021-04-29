@@ -1,3 +1,4 @@
+require('dotenv');
 const express = require('express');
 const connection = require('./database/sequelize');
 const routes = require('./routes');

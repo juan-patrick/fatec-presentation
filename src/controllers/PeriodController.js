@@ -4,7 +4,9 @@ module.exports = {
   async store(request, response) {
     const { name } = request.body;
 
+
     const period = await Period.create({ name });
+
 
     return response.json(period);
   },

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon -r src/index.js --ignore tests",
+    "dev": "nodemon -r dotenv/config ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Juan",
@@ -13,7 +13,10 @@
   "dependencies": {
     "express": "^4.17.1",
     "mysql2": "^2.2.5",
-    "nodemon": "^2.0.7",
+    "dotenv": "^8.2.0",
     "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
